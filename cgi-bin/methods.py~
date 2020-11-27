@@ -1,0 +1,15 @@
+#!/usr/bin/python3
+
+import numpy as np
+
+def readleftvectors(totalnumberofsnapshots,path):
+    leftvectors = np.loadtxt(path + 'left.txt', usecols=range(totalnumberofsnapshots))
+    return leftvectors
+	
+def readalphasnapshots(alphatype, snapshotnumber,path):
+    alphasnapshots = np.loadtxt(path + 'Alpha_Mesh_'+ str(snapshotnumber)+'.txt', usecols=range(1,alphatype))
+    return alphasnapshots
+	
+def readconnectivity(connectivitycols,path):
+    connectivity = np.loadtxt(path + 'CONNECTIVITY.cnc', usecols=range(connectivitycols))
+    return connectivity

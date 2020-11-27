@@ -1,0 +1,38 @@
+<html>
+<style>
+body {
+  background-color: #BAB8B7;
+}
+</style>
+	<head>
+		<title>Learn more about how this AI was built</title>
+	</head>
+<center>
+<h1>Learn more about how this AI was built</h1>
+<br>
+<h3>Input meshes:</h3>
+<h5>-24 scanned STL (image segmentation) meshes from medical imaging for diastole</h5>
+<h5>-24 scanned STL (image segmentation) meshes from medical imaging for systole</h5>
+<h5>-Same patients are used for systole and diastole</h5>
+<h5>-Patients were all monitored for ATAA but used geometries are not especially preoperatory ones 
+<h3>Statistical Shape Analysis input meshes:</h3>
+<h5>-Feature aligned isotopological analogous pure quadrilateral meshes (24 diastole + 24 systole)</h5>
+<h5>-See: 3D volumetric isotopological meshing for finite element and isogeometric based reduced order modeling,
+Computer Methods in Applied Mechanics and Engineering, T. Maquart et al., Volume 362, 15 April 2020</h5>
+<h5>-See: Trivariate Models Generation From Unstructured Surface Manifolds For Isogeometric Analysis - 
+Application To Reduced Order Modeling With Geometric Parameters, PhD Thesis, T. Maquart, INSA-Lyon, 2019</h5>
+<h3>Statistical Shape Analysis:</h3>
+<h5>-Shown results are based on a smart SVD (Singular Value Decomposition) using Eigen 3.2.9</h5>
+<h5>-All input meshes have been moved in the same basis in order to avoid rigid body modes</h5>
+<h5>-All arterial branches of input meshes have been cutted at the same anatomical points</h5>
+<h3>Remarks:</h3>
+<h5>-Few generated quadrilateral meshes can show some unwanted parameterization artefacts, e.g. a minor parameterization 
+twist or a slight curvature breakage near boundaries</h5>
+<h5>-All patients are subject to ATAA but some of them are also subject to DTAA (Descending Thoracic Aortic Aneurysm)</h5>
+<h5>-Extrapolation, i.e. evaluating statistical geometries out the space of geometrical parameters is not permitted in the web version. 
+It can yield severe mesh distortion or unlikely geometries</h5>
+<h3>Contact:</h3>
+<h5>S. Avril: avril@emse.fr</h5>
+<h3>Designed and implemented by T.MAQUART using Python CGI and Three.js</h3>
+</center>
+</html>

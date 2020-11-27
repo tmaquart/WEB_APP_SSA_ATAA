@@ -1,0 +1,76 @@
+<html>
+<style>
+body {
+  background-color: #BAB8B7;
+}
+</style>
+	<head>
+		<title>Statistical Shape Analysis Mesh Generator for Ascending Thoracic Aortic Aneurysm (ATAA)</title>
+	</head>
+<center>
+<h1>Statistical Shape Analysis Mesh Generator for Ascending Thoracic Aortic Aneurysm (ATAA)</h1>
+<br>
+<a href="learnmore.html">Learn more about how this AI was built</a>
+<br>
+<a href="modescoefficients.html">Statistical Shape Analysis results: modes, coefficients and more</a>
+<br>
+<form name="input" action="/cgi-bin/ssa.py" method="get">
+<br>
+Systole or diastole (please check for systole):<input type="checkbox" id="systole" name="systole" value="1.0"><br>
+<br>
+<b style="color:blue;">Truncated basis involving 10 first coefficients: set chosen alphas to zero if you want to truncate more</b>
+<br>
+<br>
+Alpha_1: <input type="number" name="alpha1" step="0.0001" value="0.0000">[Systole max: 15396, min: 9964][Diastole max: 14800, min: 9588]<br>
+Alpha_2: <input type="number" name="alpha2" step="0.0001" value="0.0000">[Systole max: 1251, min: -1110][Diastole max: 891, min: -1202]<br>
+Alpha_3: <input type="number" name="alpha3" step="0.0001" value="0.0000">[Systole max: 866, min: -984][Diastole max: 975, min: -913]<br>
+Alpha_4: <input type="number" name="alpha4" step="0.0001" value="0.0000">[Systole max: 895, min: -1360][Diastole max: 1056, min: -871]<br>
+Alpha_5: <input type="number" name="alpha5" step="0.0001" value="0.0000">[Systole max: 1037, min: -757][Diastole max: 726, min: -950]<br>
+Alpha_6: <input type="number" name="alpha6" step="0.0001" value="0.0000">[Systole max: 472, min: -1158][Diastole max: 822, min: -674]<br>
+Alpha_7: <input type="number" name="alpha7" step="0.0001" value="0.0000">[Systole max: 465, min: -567][Diastole max: 371, min: -515]<br>
+Alpha_8: <input type="number" name="alpha8" step="0.0001" value="0.0000">[Systole max: 359, min: -367][Diastole max: 387, min: -316]<br>
+Alpha_9: <input type="number" name="alpha9" step="0.0001" value="0.0000">[Systole max: 316, min: -376][Diastole max: 364, min: -348]<br>
+Alpha_10: <input type="number" name="alpha10" step="0.0001" value="0.0000">[Systole max: 312, min: -249][Diastole max: 295, min: -162]<br>
+<br>
+<b style="color:red;">Warning: you must be the only one online: simultaneous accesses!</b>
+<br>
+<br>
+<input type="submit" value="Compute Statistical Mesh">
+</form>
+<b style="color:red;">Warning: please use Firefox browser! If you use another browser, generated geometries may not update correctly</b>
+<br>
+<br>
+<a href="viewthreestl.html">Generated Mesh STL Viewer</a>
+<br>
+<a href="viewthreeobj.html">Generated Mesh OBJ Viewer</a>
+<br>
+<br>
+Generated_Feature_Aligned_Isotopological_Analogous_Pure_Quadrilateral_OBJ_file.obj:
+<br>
+<br>
+<a href="/meshes/generated.obj" download>
+  <img src="/images/objlogo.png" alt="iso.obj" style="width:30px;height:30px;">
+</a>
+<br>
+<br>
+Full_ATAA_Mesh_Generator_Version_1.0_(Python_3.6).zip:
+<br>
+<br>
+<a href="/download/Full_ATAA_Mesh_Generator_Version_1.0_(Python_3.6)_20_11_2020.zip" download>
+  <img src="/images/ziplogo.jpg" alt="Full_ATAA_Mesh_Generator_Version_1.0_(Python_3.6).zip" style="width:30px;height:30px;">
+</a>
+<br>
+<br>
+Light_ATAA_Mesh_Generator_Version_1.0_(Python_3.6).zip:
+<br>
+<br>
+<a href="/download/Light_ATAA_Mesh_Generator_Version_1.0_(Python_3.6)_20_11_2020.zip" download>
+  <img src="/images/ziplogo.jpg" alt="Light_ATAA_Mesh_Generator_Version_1.0_(Python_3.6).zip" style="width:30px;height:30px;">
+</a>
+<br>
+<h2>T. MAQUART, S.AVRIL, M.DI GIUSEPPE, S.FARZANEH</h2>
+<h3>Designed and implemented by T.MAQUART using Python CGI and Three.js</h3>
+<a href="http://www.webestools.com/global-counter-free-online-live-pages-views-visits-visitors-statistics.html"><img src="http://services.webestools.com/cpt_global/56160-8.png" alt="Free Global Counter" /></a>
+</center>
+</html>
+

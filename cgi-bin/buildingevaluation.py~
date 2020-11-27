@@ -1,0 +1,10 @@
+import numpy as np
+
+def evaluategeometry(alphas,leftvectors,numberofvertices3times):
+	verticesevaluated=[]
+	for i in range(0,numberofvertices3times):
+		valuetemp=0.0	
+		for j in range(0,len(alphas)):
+			valuetemp=np.float(valuetemp)+(np.float(alphas[j])*np.float(leftvectors[i][j]))
+		verticesevaluated.append(valuetemp)		
+	return verticesevaluated

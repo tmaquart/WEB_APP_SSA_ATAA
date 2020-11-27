@@ -1,0 +1,65 @@
+<html>
+<style>
+body {
+  background-color: #BAB8B7;
+}
+</style>
+	<head>
+		<title>Statistical Shape Analysis Mesh Generator for Ascending Thoracic Aortic Aneurysm (ATAA)</title>
+	</head>
+<center>
+<h1>Statistical Shape Analysis Mesh Generator for Ascending Thoracic Aortic Aneurysm (ATAA)</h1>
+<br>
+<a href="modescoefficients.html">Statistical Shape Analysis results: modes, coefficients and more</a>
+<br>
+<form name="input" action="/cgi-bin/ssa.py" method="get">
+<br>
+Systole or diastole (check for systole):<input type="checkbox" id="systole" name="systole" value="1.0"><br>
+<br>  
+Alpha_1: <input type="number" name="alpha1" step="0.0001" value="0.0000">[Systole max: 16000, min: -200][Diastole max: 16000, min: -200]<br>
+Alpha_2: <input type="number" name="alpha2" step="0.0001" value="0.0000">[Systole max: 16000, min: -200][Diastole max: 16000, min: -200]<br>
+Alpha_3: <input type="number" name="alpha3" step="0.0001" value="0.0000">[Systole max: 16000, min: -200][Diastole max: 16000, min: -200]<br>
+Alpha_4: <input type="number" name="alpha4" step="0.0001" value="0.0000">[Systole max: 16000, min: -200][Diastole max: 16000, min: -200]<br>
+Alpha_5: <input type="number" name="alpha5" step="0.0001" value="0.0000">[Systole max: 16000, min: -200][Diastole max: 16000, min: -200]<br>
+Alpha_6: <input type="number" name="alpha6" step="0.0001" value="0.0000">[Systole max: 16000, min: -200][Diastole max: 16000, min: -200]<br>
+Alpha_7: <input type="number" name="alpha7" step="0.0001" value="0.0000">[Systole max: 16000, min: -200][Diastole max: 16000, min: -200]<br>
+Alpha_8: <input type="number" name="alpha8" step="0.0001" value="0.0000">[Systole max: 16000, min: -200][Diastole max: 16000, min: -200]<br>
+Alpha_9: <input type="number" name="alpha9" step="0.0001" value="0.0000">[Systole max: 16000, min: -200][Diastole max: 16000, min: -200]<br>
+Alpha_10: <input type="number" name="alpha10" step="0.0001" value="0.0000">[Systole max: 16000, min: -200][Diastole max: 16000, min: -200]<br>
+<br>
+<input type="submit" value="Compute Statistical Mesh (you must be the only one online: simultaneous accesses)">
+</form>
+<a href="viewthreestl.html">Generated Mesh STL Viewer</a>
+<br>
+<a href="viewthreeobj.html">Generated Mesh OBJ Viewer</a>
+<br>
+<br>
+Generated_Feature_Aligned_Isotopological_Analogous_Pure_Quadrilateral_OBJ_file.obj:
+<br>
+<br>
+<a href="/meshes/iso.obj" download>
+  <img src="/images/obj.png" alt="iso.obj" style="width:30px;height:30px;">
+</a>
+<br>
+<br>
+Full_ATAA_Mesh_Generator_Version_1.0_(Python_3.6).zip:
+<br>
+<br>
+<a href="/download/test.jpg" download>
+  <img src="/images/ziplogo.jpg" alt="Full_ATAA_Mesh_Generator_Version_1.0_(Python_3.6).zip" style="width:30px;height:30px;">
+</a>
+<br>
+<br>
+Light_ATAA_Mesh_Generator_Version_1.0_(Python_3.6).zip:
+<br>
+<br>
+<a href="/download/test.jpg" download>
+  <img src="/images/ziplogo.jpg" alt="Light_ATAA_Mesh_Generator_Version_1.0_(Python_3.6).zip" style="width:30px;height:30px;">
+</a>
+<br>
+<h2>T. MAQUART, S.AVRIL, M.DI GIUSEPPE, S.FARZANEH</h2>
+<h3>Designed and implemented by T.MAQUART using Python CGI and Three.js</h3>
+<a href="http://www.webestools.com/global-counter-free-online-live-pages-views-visits-visitors-statistics.html"><img src="http://services.webestools.com/cpt_global/56160-8.png" alt="Free Global Counter" /></a>
+</center>
+</html>
+
